@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Abstract class User
+// Abstract class User 
 public abstract class User {
     // Attributes
     protected String userId;
@@ -9,7 +9,7 @@ public abstract class User {
     protected Location location;
     protected List<Float> ratings;
 
-    // Constructor
+    // Creating a Constructor for user abstract class
     public User(String userId, String name, Location location) {
         this.userId = userId;
         this.name = name;
@@ -17,7 +17,7 @@ public abstract class User {
         this.ratings = new ArrayList<>();  // Initialize empty ratings list
     }
 
-    // Method to update the user's location
+    // Here i create Method to update the user's location
     public void updateLocation(Location newLocation) {
         this.location = newLocation;
     }
