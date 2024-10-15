@@ -1,7 +1,7 @@
 import java.util.Map;
 
 public class Driver extends User {
-    // Additional attributes
+    // below I add some Additional attributes 
     private Map<String, String> vehicleInfo;  // e.g., {"make": "Toyota", "model": "Camry", "license_plate": "ABC123"}
     private boolean isAvailable;
 
@@ -12,7 +12,7 @@ public class Driver extends User {
         this.isAvailable = true;  // Driver starts as available by default
     }
 
-    // Method to accept a ride request
+    // Method to accept a ride request 
     public void acceptRide(RideRequest rideRequest) {
         if (isAvailable) {
             System.out.println("Driver " + this.name + " accepted ride request from Passenger " + rideRequest.getPassengerId());
